@@ -1,2 +1,4 @@
 /node_modules
 package-lock.json
+
+# "dev": "concurrently \"npm run server\" \"npm run client\""
