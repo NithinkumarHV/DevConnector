@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // DB Config
-const db = require("./config/keys").mongoURI;
+// const db = require("./config/keys").mongoURI;
 
 // Connect to MongoDB
 mongoose
-  .connect(db)
+  .connect("mongodb://localhost/devconnector")
   .then(() => console.log("mongodb connected"))
   .catch(err => console.log(err));
 
