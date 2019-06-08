@@ -188,7 +188,7 @@ router.post(
 // @desc    Add education to profile
 // @access  Private
 router.post(
-  "/edu",
+  "/education",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
     const { errors, isValid } = validateEducationInput(req.body);
